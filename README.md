@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/emoral435/LOGICA">
-    <img src="https://i.pinimg.com/originals/40/5a/9c/405a9c695ecb22c88d9ae54d7315eea9.png" alt="Logo" width="80" height="80">
+    <img src="/frontend/public/logicaTree.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h2 align="center">Logica Website</h2>
