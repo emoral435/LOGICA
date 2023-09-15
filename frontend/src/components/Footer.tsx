@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div>to help with the merge lol</div>
   )
 }
 
