@@ -1,7 +1,15 @@
+interface FooterProps {
+presName : string,
+presPhoto: string,
+} 
 
-const Footer = () => {
+
+const Footer = ({presName, presPhoto}:FooterProps) => {
   return (
-    <div>to help with the merge lol</div>
+    <footer id="footer-container">
+      <section className="container UIC-Content">UIC Stuff</section>
+      <section className="container president-content">{presName}{presPhoto}</section>
+    </footer>
   )
 }
 

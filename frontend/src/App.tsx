@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
         <Route path="/connect" element={<h1>This is where you connect with us and give us money muahahaha</h1>} />
         <Route path="/events" element={<h1>This is where we will output the calendar / events that we have coming up</h1>} />
       </Routes>
+      <Footer presName="Emily Mendoza" presPhoto="photoUrl lol"/>
     </>
   )
 }
