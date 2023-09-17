@@ -15,17 +15,17 @@ export interface ThemeState {
 }
 
 const main: Palette =  { // palette to be used generally
-    main: "#1b1b1d", // THIS IS A DARK COLOR
-    light: "#242526",
-    dark: "#030303",
-    contrastText: "#000000",
+    main: "#3C4142", // THIS IS CHARCOAL GRAY
+    light: "#e7e7e7", 
+    dark: "#242526",
+    contrastText: "#ef3b47", // THIS IS THE RED COLOR TEXT
 }
 
 const secondary: Palette =  { // this is the complimentary / secondary palette
     main: "#000000",
     light: "FIXME",
     dark: "FIXME",
-    contrastText: "FIXME",
+    contrastText: "#001e62", // THIS IS THE BLUE COLOR TEXT
 }
 
 const fun: Palette =  { // this is the party palette, so its pretty flexible
