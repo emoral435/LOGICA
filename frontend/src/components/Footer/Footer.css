@@ -1,0 +1,81 @@
+/* SECTION for the footer */
+
+#footer-container {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	gap: 3rem;
+	margin: auto;
+}
+
+/* Style for each container inside the footer */
+#footer-container .container {
+	flex: 1;
+	padding: 10px;
+	text-align: left;
+  }
+  
+.UIC-Content .managed-by {
+	font-size: 1.1rem;
+	color: #4a332b;
+}
+
+.UIC-Content .UIC-Logo:hover {
+	transform: rotate(360deg); /* Rotate the image by 360 degrees on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.UIC-Content .UIC-Logo {
+	height: 4rem;
+	width: 4rem;
+}
+
+.UIC-Content .UIC-Header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	white-space: nowrap;
+	margin-bottom: 2rem;
+}
+
+.UIC-Content {
+	font-size: 2rem;
+	max-width: min-content; 
+	margin: 10px;
+}
+
+.pres-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	max-width: min-content;
+	white-space: nowrap;
+	margin: 10px;
+}
+
+.pres-photo {
+	height: 4rem;
+	width: 4rem;
+}
+
+  /* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
+  @media (max-width: 768px) {
+	#footer-container {
+	  flex-direction: column; /* Change to a vertical layout */
+	}
+  
+	/* Reset the flex property for vertical layout */
+	#footer-container .container {
+	  flex: none;
+	  width: 100%;
+	}
+
+	.UIC-Content .UIC-Header {
+		font-size: 1.6rem;
+	}
+  }
+
+  /* !SECTION for the footer */
