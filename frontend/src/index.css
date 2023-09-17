@@ -5,3 +5,22 @@ body {
 	overflow-x: hidden; /* Prevent horizontal scrolling on small screens */
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+button {
+	display: block;
+	padding: 0;
+	margin: 0;
+	border: none;
+	cursor: pointer;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	background: transparent;
+	/* Reset any other styles you need */
+}
+

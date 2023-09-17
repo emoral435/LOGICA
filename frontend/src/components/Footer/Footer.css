@@ -2,19 +2,16 @@
 
 #footer-container {
 	background-color: #333;
-	color: #fff;
 	display: flex;
-	width: 100%;
-	justify-content: center;
+	justify-content: start;
+	padding-left: 15%;
 	gap: 3rem;
-	margin: auto;
+	position: relative; /* Required for absolute positioning of the last child */
 }
 
 /* Style for each container inside the footer */
 #footer-container .container {
-	flex: 1;
 	padding: 10px;
-	text-align: left;
   }
   
 .UIC-Content .managed-by {
@@ -30,6 +27,7 @@
 .UIC-Content .UIC-Logo {
 	height: 4rem;
 	width: 4rem;
+	user-select: none;
 }
 
 .UIC-Content .UIC-Header {
@@ -56,26 +54,58 @@
 	margin: 10px;
 }
 
-.pres-photo {
-	height: 4rem;
-	width: 4rem;
+.scroll-top {
+	padding: 0;
+	margin: 0;
+	border: none;
+	cursor: pointer;
+	height: 2rem;
+	width: 2rem;
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+	transition: background-color 0.3s ease; /* Transition property for color change */
 }
 
-  /* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
-  @media (max-width: 768px) {
+.scroll-top .arrow {
+	display: block;
+	width: 100%;
+	height: 100%;
+	transition: fill 0.3s ease; /* Add a smooth transition effect for the color change */
+}
+
+.scroll-top .arrow:hover {
+	filter: brightness(0) invert(1); /* Change the image color to white on hover */
+}
+
+.scroll-top:hover {
+	background-color: #242526;
+}
+
+/* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
+@media (max-width: 1024px) {
 	#footer-container {
-	  flex-direction: column; /* Change to a vertical layout */
+		padding-left: 0px;
 	}
-  
+}
+
+/* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+
+	#footer-container {
+		flex-direction: column; /* Change to a vertical layout */
+	}
+
 	/* Reset the flex property for vertical layout */
 	#footer-container .container {
-	  flex: none;
-	  width: 100%;
+		flex: none;
+		width: 100%;
 	}
 
 	.UIC-Content .UIC-Header {
 		font-size: 1.6rem;
 	}
-  }
+
+}
 
   /* !SECTION for the footer */
