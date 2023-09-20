@@ -1,5 +1,7 @@
 /* Navbar.css */
 .navbar {
+	display: flex;
+	justify-content: center;
     position: fixed;
     top: -60px; /* Initially hides the navbar above the viewport */
     left: 0;
@@ -20,4 +22,15 @@
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
+  }
+
+  .navbar .logica-tree {
+	width: 1.5rem;
+	height: 1.5rem;
+  }
+
+  .navbar .navbar-logica {
+	display: flex;
+	align-items: center;
+	gap: .7rem;
   }
