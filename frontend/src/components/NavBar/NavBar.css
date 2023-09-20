@@ -1,0 +1,36 @@
+/* Navbar.css */
+.navbar {
+	display: flex;
+	justify-content: center;
+    position: fixed;
+    top: -60px; /* Initially hides the navbar above the viewport */
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    transition: top 0.3s ease-in-out; /* Smooth transition */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .navbar.visible {
+    top: 0; /* Show the navbar when isVisible is true */
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .navbar .logica-tree {
+	width: 1.5rem;
+	height: 1.5rem;
+  }
+
+  .navbar .navbar-logica {
+	display: flex;
+	align-items: center;
+	gap: .7rem;
+  }

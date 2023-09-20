@@ -1,6 +1,7 @@
 body {
 	display: block;
 	margin: 0px;
+	padding: 0px;
 	font-family: 'Space Mono', monospace;
 	overflow-x: hidden; /* Prevent horizontal scrolling on small screens */
 }
