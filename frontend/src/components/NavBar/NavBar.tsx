@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './NavBar.css'; // Import your CSS file for styling
 import { useNavigate } from 'react-router-dom';
-import LOGICA from '../../../public/logicaTree.svg'
+import LOGICA from '../../assets/logicaTree.svg'
 import { useAppSelector } from '../../features/hooks';
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
 			navigate('/connect')
 			break;
 		case 'Events':
-			navigate('/connect')
+			navigate('/events')
 			break;
 		case 'Board':
 			navigate('/board')
