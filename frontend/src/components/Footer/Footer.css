@@ -94,6 +94,7 @@
 
 	#footer-container {
 		flex-direction: column; /* Change to a vertical layout */
+		padding: 15px;
 	}
 
 	/* Reset the flex property for vertical layout */
@@ -104,6 +105,7 @@
 
 	.UIC-Content .UIC-Header {
 		font-size: 1.6rem;
+		white-space: wrap;
 	}
 
 }

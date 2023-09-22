@@ -1,0 +1,56 @@
+/* Base styles */
+.logo-section {
+    display: flex;
+    flex-direction: row; /* Default: side by side */
+    height: 50vh; /* 50% of the viewport height */
+    align-items: center;
+    justify-content: space-around;
+    padding: 5rem;
+    width: auto;
+    gap: 5rem;
+  }
+  
+  .logo-section .logo {
+    height: 20rem;
+    width: 20rem;
+    transform: rotate(180deg);
+  }
+
+  .logo-section .welcome {
+    text-align: left;
+  }
+
+  .logo-section .to {
+    font-size: 2rem;
+  }
+
+  .logo-section .is-logica {
+    font-size: 10rem;
+    font-weight: bold;
+  }
+
+  /* Media query for mobile devices (max-width: 768px) */
+  @media (max-width: 768px) {
+    .logo-section {
+      flex-direction: column; /* Stacking on top of each other */
+      height: auto; /* Adjust the height as needed */
+    }
+
+    .logo-section .to {
+        font-size: 1rem;
+      }
+    
+    .logo-section .is-logica {
+    font-size: 5rem;
+    }
+
+    .logo-section .welcome {
+        text-align: center;
+      }
+
+      .logo-section .logo {
+        height: 15rem;
+        width: 15rem;
+        transform: rotate(180deg);
+      }
+  }
