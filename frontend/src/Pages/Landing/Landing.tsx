@@ -1,7 +1,11 @@
+import 'Landing.css'
+import LandingTop from '../../components/LandingTop/LandingTop'
 
 const Landing = () => {
   return (
-    <div>Landing</div>
+    <main>
+        <LandingTop />
+    </main>
   )
 }
 

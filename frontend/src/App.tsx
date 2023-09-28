@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import { presidentName, presidentEmail } from '../constants/Constants'
 import NavBar from './components/NavBar/NavBar';
-import Landing from './Pages/Landing/Landing';
+import Landing from './components/LandingTop/LandingTop';
 import Events from './Pages/events/Events';
 import Board from './Pages/board/Board';
 import Connect from './Pages/connect/Connect';
