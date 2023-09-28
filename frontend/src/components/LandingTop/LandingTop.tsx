@@ -2,7 +2,6 @@ import './LandingTop.css'
 import { useAppSelector } from "../../features/hooks"
 import LOGICA from '../../assets/logicaTree.svg'
 import { useNavigate } from 'react-router-dom'
-import landingImage from '../../assets/landingImage.jpg'
 
 const LandingTop = () => {
   const {theme} = useAppSelector(state => state.theme)
