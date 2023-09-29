@@ -13,9 +13,9 @@ function App() {
       <NavBar /> {/* NOTE this is where we can maybe put the navbar so that each page has the navbar that pops in*/}
       <Routes>
         <Route path="/" element={< Landing />} />
-        <Route path="/board" element={< Board />} />
-        <Route path="/connect" element={< Connect />} />
-        <Route path="/events" element={< Events />} />
+        <Route path="board" element={< Board />} />
+        <Route path="connect" element={< Connect />} />
+        <Route path="events" element={< Events />} />
       </Routes>
       <Footer presName={presidentName} presEmail={presidentEmail}/>
     </>

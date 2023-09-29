@@ -1,30 +1,10 @@
 import './LandingTop.css'
 import { useAppSelector } from "../../features/hooks"
 import LOGICA from '../../assets/logicaTree.svg'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const LandingTop = () => {
   const {theme} = useAppSelector(state => state.theme)
-  const navigate = useNavigate()
-
-  const redirect = (e: React.ChangeEvent<any>) => {
-    const s: string = e.target.textContent
-
-    switch (s) {
-        case 'Connect':
-        navigate('/connect')
-        break;
-        case 'Events':
-        navigate('/events')
-        break;
-        case 'Board':
-        navigate('/board')
-        break;
-        default:
-        navigate('/')
-    }
-
-}
 
   return (
     <div style={{backgroundColor: theme.primary.dark, color: theme.primary.contrastText}}>
@@ -34,14 +14,14 @@ const LandingTop = () => {
 			<div className='is-logica'>LOGICA</div>
 			<div>latinx organization for growth in computing and academics</div>
 			<div className='logo-btn'>
-				<button className='logo-child-btn' onClick={redirect}>
-				Connect
+				<button className='logo-child-btn'>
+					<Link to={"connect"} >Connect</Link>
 				</button>
-				<button className='logo-child-btn' onClick={redirect}>
-				Events
+				<button className='logo-child-btn' >
+					<Link to={"events"} >Events</Link>
 				</button>
-				<button className='logo-child-btn' onClick={redirect}>
-				Board
+				<button className='logo-child-btn' >
+					<Link to={"board"} >Board</Link>
 				</button>
      	 	</div>
 		  </div>

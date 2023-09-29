@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <MainRouter>
+    <MainRouter basename={import.meta.env.DEV ? '/' : '/LOGICA/'}>
       <Provider store={store}>
         <App />
       </Provider>
