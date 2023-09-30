@@ -26,6 +26,8 @@
   .logo-section .is-logica {
     font-size: 10rem;
     font-weight: bold;
+	width: 0;
+	overflow: visible;
   }
 
 

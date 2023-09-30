@@ -1,7 +1,10 @@
+import PageTop from "../../components/PageTops/PageTop"
 
 const Board = () => {
   return (
-    <div>Board</div>
+    <main>
+		<PageTop header='meet the' bigText='BOARD MEMBERS' home={true} connect={true} events={true} board={false}/>
+	</main>
   )
 }
 

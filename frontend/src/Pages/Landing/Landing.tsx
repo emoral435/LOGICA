@@ -1,13 +1,13 @@
 import './Landing.css'
-import LandingTop from '../../components/LandingTop/LandingTop'
+import PageTop from '../../components/PageTops/PageTop'
 import LandingBottom from '../../components/LandingBottom/LandingBottom'
 
 const Landing = () => {
   return (
-    <div>
-        <LandingTop />
+    <main>
+        <PageTop header='welcome to' bigText='LOGICA' home={false} connect={true} events={true} board={true}/>
 		<LandingBottom />
-    </div>
+    </main>
   )
 }
 
