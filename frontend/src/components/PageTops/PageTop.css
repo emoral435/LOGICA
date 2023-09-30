@@ -28,6 +28,7 @@
     font-weight: bold;
 	width: 0;
 	overflow: visible;
+	text-align: center;
   }
 
 
@@ -78,7 +79,8 @@
 	}
   
     .logo-section .is-logica {
-  font-size: 5rem;
+  		font-size: 5rem;
+		width: 100%;
   }
 
     .logo-section .welcome {

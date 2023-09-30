@@ -1,0 +1,50 @@
+.connect-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	flex-direction: column;
+}
+
+.connect-text {
+	flex: 1;
+	padding: 10px;
+}
+
+.media-grid {
+	flex: 2;
+	padding: 10px;
+}
+
+.media-header {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+	gap: 2rem;
+}
+
+.media-container {
+	width: 400px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+  	position: relative;
+  	overflow: hidden;
+  	transition: box-shadow 0.3s, transform 0.3s;
+	padding: 1rem;
+	border-radius: 10px;
+}
+
+/* Hover effect for the container */
+.media-container:hover {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	transform: translate(-5px, -5px);
+}
+
+.media-img {
+	height: 100px;
+	width: 100px;
+}

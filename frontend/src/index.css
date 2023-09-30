@@ -29,3 +29,8 @@ a {
 	/* Reset any other styles you need */
 }
 
+p {
+	margin: 0;
+	padding: 0;
+}
+
