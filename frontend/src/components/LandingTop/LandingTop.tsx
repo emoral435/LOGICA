@@ -30,7 +30,6 @@ const LandingTop = () => {
 			<img src={LOGICA} alt="logica tree logo" className='logo'/>
 		  </div>
 		</section>
-		
 	</div>
   )
 }

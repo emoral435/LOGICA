@@ -1,0 +1,44 @@
+.logica-statement {
+	display: flex;
+	justify-content: space-around; /* Adjust as needed */
+	align-items: center; /* Adjust as needed */
+	min-height: max-content;
+  }
+  
+  /* Media query for small screens (up to 768px) */
+  @media (max-width: 768px) {
+	.logica-statement {
+	  flex-direction: column;
+	  align-items: flex-start; /* Adjust as needed */
+	}
+  }
+  
+  .text-element {
+	/* Add styles for larger screens */
+	font-size: 2.5rem; /* Adjust the font size as needed */
+	font-weight: bold;
+	margin-right: 20px; /* Adjust the margin as needed */
+	text-align: center; /* Center text for smaller screens */
+	flex-basis: 40%;
+  
+}
+
+.text-element .subtext {
+	padding: 20px;
+	font-size: 1.5rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+	.text-element {
+		font-size: 30px; /* Adjust the font size for smaller screens */
+		margin: 0; /* Remove right margin for smaller screens */
+	}
+	.text-element .subtext {
+		font-size: 1rem;
+	}
+}
+
+
+
+  
