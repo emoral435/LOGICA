@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './NavBar.css'; // Import your CSS file for styling
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import LOGICA from '../../assets/logicaTree.svg'
 import { useAppSelector } from '../../features/hooks';
 
@@ -8,26 +8,6 @@ const Navbar = () => {
   const {theme} = useAppSelector(state => state.theme)	
 
   const [isVisible, setIsVisible] = useState(false);
-  const navigate = useNavigate()
-
-  const onClick = (e: React.ChangeEvent<any>) => {
-	const s: string = e.target.textContent
-
-	switch (s) {
-		case 'Connect':
-			navigate('/connect')
-			break;
-		case 'Events':
-			navigate('/events')
-			break;
-		case 'Board':
-			navigate('/board')
-			break;
-		default:
-			navigate('/')
-		}
-
-	}
 
   useEffect(() => {
     // Function to handle scroll event
@@ -50,13 +30,13 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${isVisible ? 'visible' : ''}`}>
-      <a href="#" onClick={onClick} style={{color: theme.primary.contrastText}} className='navbar-logica'>
-		LOGICA
+      <a href="#" style={{color: theme.primary.contrastText}} className='navbar-logica'>
+		<Link to={"/"}>LOGICA</Link>
 		<img src={LOGICA} alt="logica logo" className='logica-tree' />
 	  </a>
-      <a href="#" onClick={onClick}>Connect</a>
-      <a href="#" onClick={onClick}>Board</a>
-      <a href="#" onClick={onClick}>Events</a>
+      <a href="#"><Link to={"/connect"}>Connect</Link></a>
+      <a href="#"><Link to={"/board"}>Board</Link></a>
+      <a href="#"><Link to={"/events"}>Events</Link></a>
     </div>
   );
 };
