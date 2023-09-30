@@ -100,8 +100,9 @@
 
 	.UIC-Content .UIC-Header {
 		font-size: 1.6rem;
+		max-width: 100%;
+		overflow: hidden;
 		white-space: wrap;
-		gap: 0rem;
 	}
 }
 
