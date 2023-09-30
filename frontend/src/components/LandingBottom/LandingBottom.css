@@ -1,15 +1,15 @@
 .logica-statement {
 	display: flex;
-	justify-content: space-around; /* Adjust as needed */
+	justify-content: space-between; /* Adjust as needed */
 	align-items: center; /* Adjust as needed */
-	min-height: max-content;
+	padding: 2rem;
   }
   
   /* Media query for small screens (up to 768px) */
   @media (max-width: 768px) {
 	.logica-statement {
 	  flex-direction: column;
-	  align-items: flex-start; /* Adjust as needed */
+	  align-items: center; /* Adjust as needed */
 	}
   }
   
@@ -19,7 +19,7 @@
 	font-weight: bold;
 	margin-right: 20px; /* Adjust the margin as needed */
 	text-align: center; /* Center text for smaller screens */
-	flex-basis: 40%;
+	flex: 1;
   
 }
 

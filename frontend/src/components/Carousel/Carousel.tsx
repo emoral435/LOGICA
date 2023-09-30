@@ -1,12 +1,7 @@
 import Carousel from "react-material-ui-carousel"
 import "./Carousel.css"
-import { Paper, Button } from '@mui/material'
-import GBM1 from './../../assets/Carousel/GBM1.jpg'
-import GBM2 from './../../assets/Carousel/GBM2.jpg'
-import MORNINGSTAR1 from './../../assets/Carousel/MORNINGSTAR1.jpg'
-import MORNINGSTAR2 from './../../assets/Carousel/MORNINGSTAR2.jpg'
-import MORNINGSTAR3 from './../../assets/Carousel/MORNINGSTAR3.jpg'
-import PALETA1 from '../../assets/Carousel/PALETA1.jpg'
+import { GBM1, GBM2, MORNINGSTAR1, MORNINGSTAR2, MORNINGSTAR3, PALETA1 } from '../../assets/Carousel/index.ts'
+import { useLayoutEffect, useState } from "react"
 
 interface ItemProps {
 	url: string,
@@ -20,6 +15,24 @@ function ImgWrapper({url}: ItemProps)
 }
 
 const LogicaCarousel = () => {
+	const [height, setHeight] = useState(800)
+
+	const changeHeight = () => {
+		if (window.innerWidth < 768) {
+			setHeight(400);
+		} else {
+			setHeight(800)
+		}
+	}
+
+	useLayoutEffect(() => {
+		window.addEventListener("resize", changeHeight);
+
+		return () => {
+			window.removeEventListener("resize", changeHeight);
+		}
+	})
+
 	var imgUrls = [
         GBM1,
 		GBM2,
@@ -30,7 +43,7 @@ const LogicaCarousel = () => {
     ]
 
     return (
-        <Carousel className="carousel" autoPlay={true} animation="fade" fullHeightHover={true} cycleNavigation={true}>
+        <Carousel className="carousel" autoPlay={true} animation="fade" fullHeightHover={true} cycleNavigation={true} height={height} interval={10000}>
             {
                 imgUrls.map( (url, i) => <ImgWrapper key={i} url={url}/> )
             }
