@@ -1,0 +1,22 @@
+.carousel {
+	flex: 1;
+  	width: auto; /* Maintain the original aspect ratio */
+  	overflow: hidden; /* Hide any overflow if the image is larger than the container */
+}
+
+.carousel-image {
+	width: 100%; /* Ensure the image takes up the entire space of its container */
+ 	height: 100%; /* Ensure the image takes up the entire space of its container */
+  	object-fit: contain; /* Maintain aspect ratio and cover the container */
+}
+
+@media (max-width: 768px) {
+	.carousel {
+		  width: 100%; /* Maintain the original aspect ratio */
+	}
+	.carousel-image {
+		width: 100%; /* Ensure the image takes up the entire space of its container */
+		max-height: 100%; /* Ensure the image takes up the entire space of its container */
+		object-fit: contain; /* Maintain aspect ratio and cover the container */
+	}
+}
