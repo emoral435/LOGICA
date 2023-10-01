@@ -86,10 +86,7 @@
 @media (max-width: 1024px) {
 	#footer-container {
 		padding-left: 0px;
-	}
-	#footer-container {
 		flex-direction: column; /* Change to a vertical layout */
-		padding: 15px;
 	}
 
 	/* Reset the flex property for vertical layout */

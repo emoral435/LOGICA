@@ -44,7 +44,7 @@ const ConnectBottom = () => {
 		<div style={{fontSize: '3rem', textAlign: 'center'}} className='connect-text'>
 			Follow us on our social media accounts!
 		</div>
-		<div className='media-grid'>
+		<div className='connect-grid'>
 			{socialMedias.map( (media, i) => <Media img={media.imgUrl} url={media.redirect} bigText={media.name} subText={media.msg} key={i}/>)}
 		</div>
 	</section>
