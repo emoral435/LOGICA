@@ -48,6 +48,16 @@
 	padding: 10px;
 }
 
+.contacts {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.2rem;
+}
+
+.contacts a {
+	max-width: min-content;
+}
+
 @media (max-width: 768px) {
 	.board-member {
 		width: 370px;
