@@ -2,24 +2,23 @@ const presidentName: string = "Emily Mendoza"; // name of the current president
 const presidentEmail: string = "emend7@uic.edu"; // current email address of the president
 
 
-
-const boardMembers = [
+const execBoard = [
 	{
 		name: "Emily Mendoza",
-		isExecutive: true,
 		role: "President",
 		primaryEmail: "",
 		linkedIn: "",
 		github: "",
 		portfolio: "",
 		additionalLink: "",
-		dadJoke: "",
 		funFact: "",
 		hobbies: ["Watching horror movies"],
 	},
+]
+
+const boardMembers = [
 	{
 		name: "Eduardo Morales",
-		isExecutive: false,
 		role: "Jr Web Officer",
 		primaryEmail: "emoral435@gmail.com",
 		linkedIn: "https://www.linkedin.com/in/emSWE/",
@@ -35,4 +34,5 @@ export {
 	presidentName,
 	presidentEmail,
 	boardMembers,
+	execBoard
 }

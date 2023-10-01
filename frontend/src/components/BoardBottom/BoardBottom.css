@@ -1,0 +1,30 @@
+.board-section {
+	font-size: 3rem;
+	font-weight: 700;
+	margin-left: 3rem;
+}
+
+.board-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.board-grid {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	max-width: 100%; /* Ensures the container doesn't exceed the screen width */
+	margin: 0 auto; /* Center the container horizontally */
+	padding: 20px; /* Add padding to create space between the container and screen edges */
+	box-sizing: border-box; /* Include padding in the max-width calculation */
+	/* Additional styling as needed */
+}
+
+@media (max-width: 768px) {
+	.board-section {
+		font-size: 2rem;
+		margin-left: 1rem;
+	}
+}
