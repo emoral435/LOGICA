@@ -7,7 +7,7 @@ const LandingBottom = () => {
   const {theme} = useAppSelector(state => state.theme)
 
   return (
-	<section style={{backgroundColor: theme.primary.dark}} className="logica-statement">
+	<section style={{backgroundColor: theme.primary.main}} className="logica-statement">
 		<div className="text-element">
 			OUR MISSION
 			<p className="subtext">

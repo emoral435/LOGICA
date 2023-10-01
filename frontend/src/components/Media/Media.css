@@ -1,0 +1,27 @@
+.media-container {
+	position: relative;
+	width: 300px; /* Adjust the container width as needed */
+	transition: transform 0.3s ease-in-out;
+	height: auto;
+	padding: 2rem;
+}
+
+.media-header {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+	gap: 1rem;
+}
+
+
+/* Hover effect for the container */
+.media-container:hover {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	transform: translate(-5px, -5px);
+}
+
+.media-img {
+	height: 4.2rem;
+	width: 4.2rem;
+}

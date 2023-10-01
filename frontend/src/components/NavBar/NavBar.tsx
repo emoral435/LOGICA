@@ -30,13 +30,13 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${isVisible ? 'visible' : ''}`}>
-      <a href="#" style={{color: theme.primary.contrastText}} className='navbar-logica'>
+      <div style={{color: theme.primary.contrastText}} className='navbar-logica'>
 		<Link to={"/"}>LOGICA</Link>
 		<img src={LOGICA} alt="logica logo" className='logica-tree' />
-	  </a>
-      <a href="#"><Link to={"/connect"}>Connect</Link></a>
-      <a href="#"><Link to={"/board"}>Board</Link></a>
-      <a href="#"><Link to={"/events"}>Events</Link></a>
+	  </div>
+      <div><Link to={"/connect"}>Connect</Link></div>
+      <div><Link to={"/board"}>Board</Link></div>
+      <div><Link to={"/events"}>Events</Link></div>
     </div>
   );
 };

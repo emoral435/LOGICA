@@ -4,6 +4,8 @@
 	justify-content: center;
     position: fixed;
     top: -60px; /* Initially hides the navbar above the viewport */
+	max-width: 100%;
+	overflow: hidden;
     left: 0;
     right: 0;
     background-color: #333;
