@@ -19,7 +19,7 @@ const Footer = ({presName, presEmail}:FooterProps) => {
   }
   
   return (
-    <footer id="footer-container" style={{backgroundColor: theme.primary.light}}> {/* main container for the footer - has three children and uses flex for postioning*/}
+    <footer id="footer-container" style={{backgroundColor: theme.primary.light, maxWidth: "100%", overflow: "hidden"}}> {/* main container for the footer - has three children and uses flex for postioning*/}
 
       <section className="container UIC-Content">
 		<div className='UIC-Header'>
