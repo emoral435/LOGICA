@@ -1,6 +1,7 @@
 import "./LandingBottom.css"
 import { useAppSelector } from "../../features/hooks"
 import LogicaCarousel from "../Carousel/Carousel"
+import { Link } from "react-router-dom"
 
 
 const LandingBottom = () => {
@@ -22,6 +23,11 @@ const LandingBottom = () => {
 				within the Computer Science industry, such as Google, in order to aid students in their career and professional success.
 				We would love to have you join our future events, so consider joining / connecting with us!
 			</p>
+			<div className="logo-btn">
+				<button className='logo-child-btn'>
+					<Link to={"/connect"} >Connect</Link>
+				</button>
+			</div>
 		</div>
 		<LogicaCarousel />
 	</section>
