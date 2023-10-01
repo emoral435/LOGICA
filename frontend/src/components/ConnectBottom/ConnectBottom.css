@@ -12,9 +12,15 @@
 }
 
 .media-grid {
-	flex: 2;
-	padding: 10px;
-}
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	max-width: 100%; /* Ensures the container doesn't exceed the screen width */
+	margin: 0 auto; /* Center the container horizontally */
+	padding: 20px; /* Add padding to create space between the container and screen edges */
+	box-sizing: border-box; /* Include padding in the max-width calculation */
+	/* Additional styling as needed */
+  }
 
 .media-header {
 	display: flex;
