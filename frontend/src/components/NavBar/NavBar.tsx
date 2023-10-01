@@ -3,7 +3,6 @@ import './NavBar.css'; // Import your CSS file for styling
 import { Link } from 'react-router-dom';
 import LOGICA from '../../assets/logicaTree.svg'
 import { useAppSelector } from '../../features/hooks';
-import arrow from '../../assets/arrow_Up.svg'
 
 const Navbar = () => {
   const {theme} = useAppSelector(state => state.theme)	
