@@ -51,4 +51,8 @@ const LogicaCarousel = () => {
     )
 }
 
+export {
+	ImgWrapper
+}
+
 export default LogicaCarousel
