@@ -31,6 +31,7 @@ const BoardBottom = () => {
 					additionalLink={member.additionalLink}
 					hobbies={member.hobbies}
 					funFact={member.funFact}
+					pic={member.pic}
 					/>)}
 				</div>
 			</div>
@@ -48,6 +49,7 @@ const BoardBottom = () => {
 					additionalLink={member.additionalLink}
 					hobbies={member.hobbies}
 					funFact={member.funFact}
+					pic={member.pic}
 					/>)}
 				</div>
 			</div>

@@ -1,6 +1,5 @@
 import { useAppSelector } from '../../features/hooks'
 import './BoardMember.css'
-import me from './IMG_1171.jpg'
 
 interface MemberDetails {
 	name: string,
@@ -12,17 +11,21 @@ interface MemberDetails {
 	additionalLink: string,
 	funFact: string,
 	hobbies: string[],
+	pic: string
 }
 
 
 
-const BoardMember = ({name, role, primaryEmail, linkedIn, github, portfolio, additionalLink, funFact, hobbies}: MemberDetails) => {
+const BoardMember = ({name, role, primaryEmail, linkedIn, github, portfolio, additionalLink, funFact, hobbies, pic}: MemberDetails) => {
   const {theme} = useAppSelector(state => state.theme)
   return (
 	<div className='board-member' >
 		<div className='member picture-container'>
-			<img src={me} alt="board member picture" className='picture'/>
-			<span className='role'>{role} - {name}</span>
+			<img src={pic} alt="board member picture" className='picture'/>
+			<div className='role'>
+				<div>{role}</div>
+				<div>{name}</div>
+			</div>
 		</div>
 		<div className='member info' style={{backgroundColor: theme.primary.light, color: theme.primary.dark, fontWeight: 700, fontSize: '1.7rem'}}>
 			<div>
